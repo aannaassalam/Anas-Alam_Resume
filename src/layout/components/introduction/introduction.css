@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+.introduction{
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    background-color: #f6f6f6;
+}
+.introduction .profilePicture{
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.introduction .profilePicture img{
+    width: 350px;
+    border: 3px solid #020911;
+    border-radius: 50%;
+}
+
+.introduction .candidateDetail{
+    padding: 0 80px;
+}
+
+.introduction .candidateDetail .nameAndRole{
+    margin-bottom: 25px;
+}
+
+.introduction .candidateDetail .nameAndRole h1{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Comfortaa', cursive;
+    letter-spacing: 8px;
+    margin-bottom: 15px;
+}
+
+.introduction .candidateDetail .nameAndRole h4{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Comfortaa', cursive;
+    letter-spacing: 1px;
+}
+
+.introduction .otherDetails{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.introduction .otherDetails .left,
+.introduction .otherDetails .right{
+    width: 46%;
+    display: flex;
+    min-height: 90px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.introduction .otherDetails .left i,
+.introduction .otherDetails .right i{
+    margin-right: 5px;
+}
+
+.introduction .otherDetails a{
+    color: #000;
+}
+
+@media (max-width: 768px){
+    .introduction .profilePicture{
+        width: 45%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .introduction .profilePicture img{
+        width: 250px;
+    }
+
+    .introduction .candidateDetail{
+        padding: 0;
+        margin-left: 25px;
+    }
+
+    .introduction .otherDetails{
+        flex-direction: column;
+    }
+
+    .introduction .otherDetails .left,
+    .introduction .otherDetails .left .address{
+        margin-bottom: 15px;
+    }
+
+    .introduction .otherDetails .left,
+.introduction .otherDetails .right{
+    width: 100%;
+    min-height: 60px;
+}
+.introduction .otherDetails .left i,
+.introduction .otherDetails .right i{
+    margin-right: 8px;
+}
+}
+
+@media (max-width: 680px){
+    .introduction{
+        flex-direction: column;
+    }
+
+    .introduction .profilePicture{
+        margin-bottom: 30px;
+    }
+
+    .introduction .candidateDetail{
+        margin-left: 10px;
+    }
+}
+
+@media(max-width: 380px){
+    .introduction .candidateDetail{
+        margin: 0 auto;
+    }
+    .introduction .candidateDetail .nameAndRole h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    .introduction .candidateDetail .nameAndRole h4{
+        margin-left: 25px;
+        font-size: 14px;
+    }
+    .introduction .otherDetails{
+        width: 85%;
+        margin-left: 25px;
+    }
+}
+
+@media(max-width: 320px){
+    .introduction .candidateDetail .nameAndRole h1{
+        font-size: 35px;
+    }
+    .introduction .candidateDetail .nameAndRole h4{
+        margin-left: 20px;
+    }
+    .introduction .otherDetails{
+        margin-left: 20px;
+    }
+}

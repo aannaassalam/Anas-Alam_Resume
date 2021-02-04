@@ -1,0 +1,49 @@
+.experience{
+    margin-bottom: 50px;
+}
+
+.experience h3{
+    font-size: 24px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.experience h3::after{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    right: 0;
+    bottom: -5px;
+    background-color: #000;
+}
+
+.experience p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px){
+    .experience p{
+        text-align: justify;
+    }
+}
+
+@media(max-width: 680px){
+    .experience h3{
+        color: #fff
+    }
+
+    .experience h3::after{
+        background-color: #fff;
+    }
+
+    .experience p{
+        color: #fff;
+        text-align: left;
+    }
+}

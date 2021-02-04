@@ -1,0 +1,55 @@
+.skills{
+    margin-bottom: 50px;
+}
+
+.skills h3{
+    font-size: 24px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.skills h3::after{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    right: 0;
+    bottom: -5px;
+    background-color: #000;
+}
+
+.skills p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+}
+
+.skills ol{
+    margin-left: 16px;
+}
+
+.skills ol li{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media(max-width: 680px){
+    .skills h3{
+        color: #fff
+    }
+
+    .skills h3::after{
+        background-color: #fff;
+    }
+
+    .skills p{
+        color: #fff;
+    }
+
+    .skills ol li{
+        color: #fff;
+        margin-bottom: 5px;
+    }
+}
